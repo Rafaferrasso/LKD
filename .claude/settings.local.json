@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:comercial1696247910.hotmart.host)"
+    ]
+  }
+}
