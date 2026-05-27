@@ -554,9 +554,9 @@ p { margin: 0 0 1em; }
 .diagnostic-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px 32px;
+    gap: 14px 40px;
     margin-bottom: 28px;
-    max-width: 720px;
+    max-width: 860px;
 }
 .diagnostic-list li {
     font-family: var(--font-serif);
@@ -581,6 +581,7 @@ p { margin: 0 0 1em; }
     font-family: var(--font-serif);
     font-size: 1.3rem;
     font-style: italic;
+    line-height: 1.45;
     color: var(--navy-deep);
     margin: 0;
     padding-top: 20px;
@@ -833,7 +834,7 @@ p { margin: 0 0 1em; }
 /* ============ PLANOS ============ */
 .plans {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-bottom: 64px;
 }
@@ -1083,6 +1084,33 @@ p { margin: 0 0 1em; }
 .price-value .currency { font-size: 1.6rem; font-weight: 700; }
 .price-value .amount { font-size: 5rem; font-weight: 800; line-height: 1; }
 .price-value .cents { font-size: 1.6rem; font-weight: 700; }
+
+.course-pillars {
+    position: relative;
+    z-index: 1;
+    padding: 24px 0;
+    margin-bottom: 28px;
+    border-top: 1px solid rgba(245, 241, 232, 0.18);
+    border-bottom: 1px solid rgba(245, 241, 232, 0.18);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.course-pillars li {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--cream-light);
+    padding-left: 30px;
+    position: relative;
+}
+.course-pillars li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #8eb6e3;
+    font-weight: 800;
+}
 
 .guarantee {
     text-align: center;
